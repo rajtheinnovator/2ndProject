@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.android.a2ndproject.MainActivity"
+        android:id="@+id/activity_main"
+        android:background="@drawable/soccergras"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/goalButton1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/soccer_gate_small"
+                android:drawableLeft="@drawable/football_small"
+                android:onClick="increment1"
+                android:padding="10dp"
+                android:text="GOAL!!!" />
+
+            <TextView
+                android:id="@+id/team1Counter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="50dp"
+                android:layout_toLeftOf="@id/goalButton1"
+                android:text="0"
+                android:textColor="#F44336"
+                android:textSize="80sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30dp"
+                android:layout_toRightOf="@id/goalButton1"
+                android:scaleType="fitCenter"
+                android:src="@drawable/manchester_united_logo_small" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawableLeft="@drawable/whistle_small"
+                android:onClick="resetScore"
+                android:text="RESET" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/goalButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/soccer_gate_small"
+                android:drawableLeft="@drawable/football_small"
+                android:onClick="increment2"
+                android:padding="10dp"
+                android:text="GOAL!!!" />
+
+            <TextView
+                android:id="@+id/team2Counter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="50dp"
+                android:layout_toLeftOf="@id/goalButton2"
+                android:text="0"
+                android:textColor="#2979FF"
+                android:textSize="80sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30dp"
+                android:layout_toRightOf="@id/goalButton2"
+                android:src="@drawable/chelsea_fc_logo_small" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
